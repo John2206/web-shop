@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FocusForge — Fokus-Timer für Studierende &amp; Entwickler</title>
+  <meta name="description" content="FocusForge ist der Pomodoro-Timer mit Website-Blocker für Studierende und Entwickler. Kostenlos starten, Pro ab €4,99/Monat.">
+  <link rel="icon" href="assets/bildmarke.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
+
+<header class="site-header" role="banner">
+  <div class="container">
+    <nav class="nav-inner" aria-label="Hauptnavigation">
+      <a href="index.html" class="logo" aria-label="FocusForge – Zur Startseite">
+        <img src="assets/wortbildmarke.svg" class="logo-wortbild" alt="FocusForge">
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#features">Funktionen</a></li>
+        <li><a href="preise.html">Preise</a></li>
+        <li><a href="about.html">Über uns</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+      <a href="preise.html" class="btn btn-primary btn-sm nav-cta" style="display:none;" aria-label="Preise ansehen">Preise</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<nav class="nav-mobile" id="mobile-nav" aria-label="Mobile Navigation">
+  <ul role="list">
+    <li><a href="#features">Funktionen</a></li>
+    <li><a href="preise.html">Preise</a></li>
+    <li><a href="about.html">Über uns</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+    <li><a href="impressum.html">Impressum</a></li>
+  </ul>
+</nav>
+
+<main id="main-content">
+
+  <!-- ── HERO ───────────────────────────────────────── -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <div class="hero-pill fade-up">
+            <span class="hero-pill-dot" aria-hidden="true"></span>
+            Freemium — Kostenlos starten
+          </div>
+          <h1 id="hero-heading" class="hero-title fade-up delay-1">
+            Fokus, der nicht<br><em>nachgibt.</em>
+          </h1>
+          <p class="hero-subtitle fade-up delay-2">
+            FocusForge kombiniert Pomodoro-Timer, Website-Blocker und Produktivitätsstatistiken — für Studierende und Entwickler, die keine Zeit für Ablenkungen haben.
+          </p>
+          <div class="hero-ctas fade-up delay-3">
+            <a href="preise.html" class="btn btn-primary btn-lg">Kostenlos starten</a>
+            <a href="preise.html" class="btn btn-secondary btn-lg">Preise ansehen</a>
+          </div>
+          <div class="hero-stats fade-up delay-4" aria-label="Produktkennzahlen">
+            <div>
+              <span class="stat-value">25 min</span>
+              <span class="stat-label">Standard-Fokusblock</span>
+            </div>
+            <div>
+              <span class="stat-value">Free</span>
+              <span class="stat-label">Für immer kostenlos</span>
+            </div>
+            <div>
+              <span class="stat-value">€39/J</span>
+              <span class="stat-label">Pro-Plan jährlich</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timer mock -->
+        <div class="hero-visual fade-up delay-2" aria-hidden="true">
+          <div class="timer-card" role="presentation">
+            <div class="timer-session-label">Fokus-Session</div>
+            <div class="timer-ring-wrap">
+              <svg class="timer-ring" viewBox="0 0 148 148" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle class="ring-track" cx="74" cy="74" r="65"/>
+                <circle class="ring-progress" cx="74" cy="74" r="65"/>
+              </svg>
+              <div class="timer-time">18:43</div>
+            </div>
+            <div class="timer-meta">Session 2 von 4</div>
+            <div class="timer-controls">
+              <div class="timer-btn-mock-sm" title="Zurückspulen">↺</div>
+              <div class="timer-btn-mock" title="Pause">⏸</div>
+              <div class="timer-btn-mock-sm" title="Überspringen">⏭</div>
+            </div>
+            <div class="timer-bar">
+              <span>Gesamt</span>
+              <div class="timer-bar-track"><div class="timer-bar-fill"></div></div>
+              <span>75%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FEATURES ────────────────────────────────────── -->
+  <section id="features" aria-labelledby="features-heading">
+    <div class="container">
+      <div class="features-header">
+        <p class="section-label">Funktionen</p>
+        <h2 id="features-heading">Alles, was echter Fokus braucht.</h2>
+        <p>Kein Schnickschnack. Nur die Werkzeuge, die tatsächlich helfen — vom ersten Pomodoro bis zum Jahresrückblick.</p>
+      </div>
+      <div class="features-grid">
+
+        <article class="feature-card scroll-fade">
+          <div class="feature-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="10" cy="11" r="7"/><path d="M10 7v4l2.5 2.5"/><path d="M7.5 2h5M10 2v2"/>
+            </svg>
+          </div>
+          <h3>Pomodoro-Timer</h3>
+          <p>Anpassbare Fokus- und Pausenintervalle. Arbeite in Blöcken, die zu deinem Rhythmus passen — 25 Minuten oder 90 Minuten.</p>
+        </article>
+
+        <article class="feature-card scroll-fade">
+          <div class="feature-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10 2l6.5 2.5v5c0 4-3 7-6.5 8-3.5-1-6.5-4-6.5-8V4.5z"/><path d="M7 10l2 2 4-4"/>
+            </svg>
+          </div>
+          <h3>Website-Blocker</h3>
+          <p>Blockiere ablenkende Seiten und Apps während aktiver Fokus-Sessions. Social Media, News, YouTube — alles sperrbar.</p>
+          <span class="badge">Pro</span>
+        </article>
+
+        <article class="feature-card scroll-fade">
+          <div class="feature-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+              <path d="M3 17V9M7 17V5M11 17V9M15 17V3"/>
+            </svg>
+          </div>
+          <h3>Session-Statistiken</h3>
+          <p>Sieh, wie viel du wirklich arbeitest. Tages-, Wochen- und Monatsansicht deiner Fokuszeit — ohne Selbstbetrug.</p>
+        </article>
+
+        <article class="feature-card scroll-fade">
+          <div class="feature-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M13 3H5a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V7"/><path d="M14 3l3 3-7 7-4 1 1-4 7-7"/>
+            </svg>
+          </div>
+          <h3>CSV-Export</h3>
+          <p>Exportiere deine gesamte Session-Historie als CSV. Für eigene Analysen, Berichte oder einfach als Backup.</p>
+          <span class="badge">Pro</span>
+        </article>
+
+        <article class="feature-card scroll-fade">
+          <div class="feature-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="5" width="16" height="12" rx="1.5"/><path d="M5.5 9h.01M8.5 9h.01M11.5 9h.01M14.5 9h.01M5.5 12h.01M8.5 12h.01M11.5 12h.01M7 15h6"/>
+            </svg>
+          </div>
+          <h3>Keyboard-First UI</h3>
+          <p>Starte, pausiere und stoppe Sessions ohne die Maus anzufassen. Komplett tastaturgesteuert — für Entwickler gebaut.</p>
+        </article>
+
+        <article class="feature-card scroll-fade">
+          <div class="feature-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+              <rect x="6" y="2" width="8" height="16" rx="2"/><circle cx="10" cy="15" r="0.5" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Mobile App</h3>
+          <p>Nativer iOS- und Android-Client. Deine Sessions, deine Statistiken und dein Blocker — immer in der Tasche.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PRICING TEASER ───────────────────────────────── -->
+  <section aria-labelledby="pricing-teaser-heading" style="padding-top:0;">
+    <div class="container">
+      <div class="card card-accent" style="padding: 3rem 2rem; max-width: 800px; margin: 0 auto; text-align: center;">
+        <p class="section-label" style="justify-content: center;">Preise</p>
+        <h2 id="pricing-teaser-heading">Starte kostenlos.<br>Upgrade, wenn du bereit bist.</h2>
+        <p class="text-muted mt-md" style="max-width: 440px; margin-left: auto; margin-right: auto;">
+          FocusForge Free ist für immer kostenlos. Pro schaltet Website-Blocker, unbegrenzte Historie und CSV-Export frei.
+        </p>
+        <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; margin: 2.5rem 0;">
+          <div>
+            <span style="font-family: var(--font-heading); font-size: 2.8rem; font-weight: 700; color: var(--color-text);">€0</span>
+            <div class="text-muted text-sm">Free — für immer</div>
+          </div>
+          <div style="width: 1px; background: var(--color-border);"></div>
+          <div>
+            <span style="font-family: var(--font-heading); font-size: 2.8rem; font-weight: 700; color: var(--color-accent);">€4,99</span>
+            <div class="text-muted text-sm">Pro — pro Monat</div>
+          </div>
+        </div>
+        <a href="preise.html" class="btn btn-primary btn-lg">Alle Preise ansehen</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" aria-label="FocusForge – Zur Startseite">
+          <img src="assets/wortbildmarke.svg" class="logo-wortbild" alt="FocusForge">
+        </a>
+        <p>Fokus-Timer für Studierende und Entwickler. Made in Vienna.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Produkt</h3>
+        <ul>
+          <li><a href="#features">Funktionen</a></li>
+          <li><a href="preise.html">Preise</a></li>
+          <li><a href="about.html">Über uns</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Rechtliches</h3>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="agb.html">AGB</a></li>
+          <li><a href="lizenz.html">Lizenz</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 FocusForge GmbH, Wien. Alle Rechte vorbehalten.</span>
+      <span lang="en">Made with focus in Vienna, Austria.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
