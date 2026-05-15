@@ -1010,6 +1010,15 @@ td strong { color: var(--color-text); }
   color: var(--color-accent);
 }
 .founder-card h3 { font-size: 1rem; margin-bottom: 0.2rem; }
+.founder-photo {
+  width: 120px; height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 2px solid rgba(245,166,35,0.4);
+  display: block;
+  margin: 0 auto var(--space-md);
+}
 .founder-card p { font-size: 0.83rem; color: var(--color-text-muted); margin: 0; }
 
 .brand-marks-grid {

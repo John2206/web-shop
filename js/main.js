@@ -1,4 +1,4 @@
-/* FocusForge — main.js */
+/* TaktForge — main.js */
 
 document.addEventListener('DOMContentLoaded', () => {
   initMobileNav();
@@ -135,7 +135,7 @@ function initCheckoutFlow() {
   btns.forEach(btn => {
     btn.addEventListener('click', () => {
       const plan = btn.dataset.checkoutTrigger;
-      if (planLabel) planLabel.textContent = plan === 'yearly' ? 'FocusForge Pro — Jährlich' : 'FocusForge Pro — Monatlich';
+      if (planLabel) planLabel.textContent = plan === 'yearly' ? 'TaktForge Pro — Jährlich' : 'TaktForge Pro — Monatlich';
       if (planPrice) planPrice.textContent = plan === 'yearly' ? '€39,00 / Jahr' : '€4,99 / Monat';
       section.hidden = false;
       section.scrollIntoView({ behavior: 'smooth', block: 'start' });
