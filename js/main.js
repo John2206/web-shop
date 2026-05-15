@@ -97,6 +97,7 @@ function initContactForm() {
     setTimeout(() => {
       const success = document.getElementById('form-success');
       if (success) {
+        form.reset();
         form.hidden = true;
         success.hidden = false;
         success.focus();
