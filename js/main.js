@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactForm();
   initCheckoutFlow();
   initScrollAnimations();
+  initQuotesCarousel();
   markActivePage();
 });
 
@@ -36,6 +37,43 @@ function initMobileNav() {
       toggle.focus();
     }
   });
+}
+
+/* ── Quotes carousel ────────────────────────────────── */
+function initQuotesCarousel() {
+  const slides = document.querySelectorAll('.quote-slide');
+  const dots   = document.querySelectorAll('.quote-dot');
+  if (!slides.length) return;
+
+  let current = 0;
+  let timer;
+
+  function goTo(index) {
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    dots[current].setAttribute('aria-selected', 'false');
+    current = (index + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+    dots[current].setAttribute('aria-selected', 'true');
+  }
+
+  function startAuto() {
+    timer = setInterval(() => goTo(current + 1), 6000);
+  }
+
+  function resetAuto() {
+    clearInterval(timer);
+    startAuto();
+  }
+
+  slides[0].classList.add('active');
+
+  document.getElementById('quote-prev').addEventListener('click', () => { goTo(current - 1); resetAuto(); });
+  document.getElementById('quote-next').addEventListener('click', () => { goTo(current + 1); resetAuto(); });
+  dots.forEach(dot => dot.addEventListener('click', () => { goTo(Number(dot.dataset.index)); resetAuto(); }));
+
+  startAuto();
 }
 
 /* ── Active page nav link ──────────────────────────── */
