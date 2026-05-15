@@ -1,272 +1,497 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Preise — TaktForge</title>
-  <meta name="description" content="TaktForge Free ist für immer kostenlos. Pro ab €4,99/Monat oder €39/Jahr — mit Website-Blocker, unbegrenzter Historie und CSV-Export.">
-  <link rel="icon" href="assets/bildmarke.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preise — TaktForge</title>
+    <meta
+      name="description"
+      content="TaktForge Free ist für immer kostenlos. Pro ab €4,99/Monat oder €39/Jahr — mit Website-Blocker, unbegrenzter Historie und CSV-Export."
+    />
+    <link rel="icon" href="assets/bildmarke.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Rajdhani:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
 
-<a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
+    <header class="site-header" role="banner">
+      <div class="container">
+        <nav class="nav-inner" aria-label="Hauptnavigation">
+          <a
+            href="index.html"
+            class="logo"
+            aria-label="TaktForge – Zur Startseite"
+          >
+            <img
+              src="assets/wortbildmarke.svg"
+              class="logo-wortbild"
+              alt="TaktForge"
+            />
+          </a>
+          <ul class="nav-links" role="list">
+            <li><a href="index.html#features">Funktionen</a></li>
+            <li><a href="preise.html" aria-current="page">Preise</a></li>
+            <li><a href="about.html">Über uns</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+          <button
+            class="nav-toggle"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+            aria-label="Menü öffnen"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </nav>
+      </div>
+    </header>
 
-<header class="site-header" role="banner">
-  <div class="container">
-    <nav class="nav-inner" aria-label="Hauptnavigation">
-      <a href="index.html" class="logo" aria-label="TaktForge – Zur Startseite">
-        <img src="assets/wortbildmarke.svg" class="logo-wortbild" alt="TaktForge">
-      </a>
-      <ul class="nav-links" role="list">
+    <nav class="nav-mobile" id="mobile-nav" aria-label="Mobile Navigation">
+      <ul role="list">
         <li><a href="index.html#features">Funktionen</a></li>
         <li><a href="preise.html" aria-current="page">Preise</a></li>
         <li><a href="about.html">Über uns</a></li>
         <li><a href="kontakt.html">Kontakt</a></li>
       </ul>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Menü öffnen">
-        <span></span><span></span><span></span>
-      </button>
     </nav>
-  </div>
-</header>
 
-<nav class="nav-mobile" id="mobile-nav" aria-label="Mobile Navigation">
-  <ul role="list">
-    <li><a href="index.html#features">Funktionen</a></li>
-    <li><a href="preise.html" aria-current="page">Preise</a></li>
-    <li><a href="about.html">Über uns</a></li>
-    <li><a href="kontakt.html">Kontakt</a></li>
-  </ul>
-</nav>
-
-<main id="main-content">
-  <div class="page-hero">
-    <div class="container">
-      <p class="section-label">Preise</p>
-      <h1>Einfach. Transparent. Fair.</h1>
-      <p>Starte kostenlos und upgrade nur, wenn du die Pro-Funktionen wirklich brauchst. Keine versteckten Kosten, kein Lock-in.</p>
-    </div>
-  </div>
-
-  <section aria-labelledby="pricing-heading">
-    <div class="container">
-      <h2 id="pricing-heading" class="sr-only">Preisübersicht</h2>
-
-      <div class="pricing-grid">
-
-        <!-- Free -->
-        <article class="pricing-card" aria-labelledby="free-heading">
-          <div class="pricing-tier">Free</div>
-          <div class="pricing-price">
-            <span class="currency">€</span>0
-          </div>
-          <div class="pricing-alt">Für immer kostenlos — kein Abo, keine Kreditkarte</div>
-          <hr class="pricing-divider">
-          <ul class="pricing-features-list" aria-label="Free-Plan Funktionen">
-            <li class="included">
-              <span class="pf-check" aria-label="Enthalten">✓</span>
-              Pomodoro-Timer (25/5 min Standard)
-            </li>
-            <li class="included">
-              <span class="pf-check" aria-label="Enthalten">✓</span>
-              Anpassbare Intervalle
-            </li>
-            <li class="included">
-              <span class="pf-check" aria-label="Enthalten">✓</span>
-              Session-Historie (7 Tage)
-            </li>
-            <li class="included">
-              <span class="pf-check" aria-label="Enthalten">✓</span>
-              Keyboard-Shortcuts
-            </li>
-            <li class="included">
-              <span class="pf-check" aria-label="Enthalten">✓</span>
-              iOS &amp; Android App
-            </li>
-            <li>
-              <span class="pf-dash" aria-label="Nicht enthalten">—</span>
-              Website-Blocker
-            </li>
-            <li>
-              <span class="pf-dash" aria-label="Nicht enthalten">—</span>
-              Unbegrenzte Historie
-            </li>
-            <li>
-              <span class="pf-dash" aria-label="Nicht enthalten">—</span>
-              CSV-Export
-            </li>
-            <li>
-              <span class="pf-dash" aria-label="Nicht enthalten">—</span>
-              Themes
-            </li>
-          </ul>
-          <a href="kontakt.html" class="btn btn-secondary" style="width:100%; justify-content:center;">Kostenlos starten</a>
-        </article>
-
-        <!-- Pro -->
-        <article class="pricing-card featured" aria-labelledby="pro-heading">
-          <div class="pricing-badge-top">Empfohlen</div>
-          <div class="pricing-tier">Pro</div>
-          <div class="pricing-price is-accent">
-            <span class="currency">€</span>4,99<span class="period">/Monat</span>
-          </div>
-          <div class="pricing-alt">oder <strong style="color: var(--color-text);">€39,00/Jahr</strong> — spare 35%</div>
-          <hr class="pricing-divider">
-          <ul class="pricing-features-list" aria-label="Pro-Plan Funktionen">
-            <li class="included">
-              <span class="pf-check" aria-label="Enthalten">✓</span>
-              Alles aus Free
-            </li>
-            <li class="included">
-              <span class="pf-check" aria-label="Enthalten">✓</span>
-              <span><strong>Website- &amp; App-Blocker</strong></span>
-            </li>
-            <li class="included">
-              <span class="pf-check" aria-label="Enthalten">✓</span>
-              Unbegrenzte Session-Historie
-            </li>
-            <li class="included">
-              <span class="pf-check" aria-label="Enthalten">✓</span>
-              CSV-Export der Statistiken
-            </li>
-            <li class="included">
-              <span class="pf-check" aria-label="Enthalten">✓</span>
-              Themes &amp; Anpassungen
-            </li>
-            <li class="included">
-              <span class="pf-check" aria-label="Enthalten">✓</span>
-              Prioritäts-Support
-            </li>
-            <li class="included">
-              <span class="pf-check" aria-label="Enthalten">✓</span>
-              Alle zukünftigen Pro-Features
-            </li>
-          </ul>
-          <div style="display: flex; flex-direction: column; gap: 0.65rem;">
-            <button class="btn btn-primary" style="width:100%;" data-checkout-trigger="monthly" aria-describedby="checkout-info">Monatlich wählen — €4,99/Monat</button>
-            <button class="btn btn-ghost" style="width:100%;" data-checkout-trigger="yearly" aria-describedby="checkout-info">Jährlich wählen — €39,00/Jahr</button>
-          </div>
-          <p id="checkout-info" class="text-muted text-xs mt-md" style="text-align:center;">Jederzeit kündbar. Kein automatisches Upgrade ohne Zustimmung.</p>
-        </article>
-
-      </div>
-
-      <!-- FAQ -->
-      <div style="max-width: 640px; margin-top: var(--space-3xl);">
-        <h2 style="font-size: 1.6rem; margin-bottom: var(--space-2xl);">Häufige Fragen</h2>
-
-        <details style="margin-bottom: var(--space-lg); border-bottom: 1px solid var(--color-border); padding-bottom: var(--space-lg);">
-          <summary style="font-family: var(--font-heading); font-weight: 700; font-size: 1.05rem; cursor: pointer; color: var(--color-text); list-style: none; display: flex; justify-content: space-between; align-items: center;">
-            Kann ich jederzeit kündigen?
-            <span aria-hidden="true" style="color: var(--color-accent);">+</span>
-          </summary>
-          <p class="text-muted mt-md">Ja. Pro-Abonnements können jederzeit über die App oder per E-Mail gekündigt werden. Das Abo läuft bis zum Ende der bezahlten Periode weiter.</p>
-        </details>
-
-        <details style="margin-bottom: var(--space-lg); border-bottom: 1px solid var(--color-border); padding-bottom: var(--space-lg);">
-          <summary style="font-family: var(--font-heading); font-weight: 700; font-size: 1.05rem; cursor: pointer; color: var(--color-text); list-style: none; display: flex; justify-content: space-between; align-items: center;">
-            Was passiert mit meinen Daten nach der Kündigung?
-            <span aria-hidden="true" style="color: var(--color-accent);">+</span>
-          </summary>
-          <p class="text-muted mt-md">Deine Session-Historie der letzten 7 Tage bleibt erhalten. Ältere Einträge sind nach dem Downgrade nicht mehr zugänglich, bleiben aber 30 Tage gespeichert für den Fall eines Upgrades.</p>
-        </details>
-
-        <details style="margin-bottom: var(--space-lg); border-bottom: 1px solid var(--color-border); padding-bottom: var(--space-lg);">
-          <summary style="font-family: var(--font-heading); font-weight: 700; font-size: 1.05rem; cursor: pointer; color: var(--color-text); list-style: none; display: flex; justify-content: space-between; align-items: center;">
-            Gibt es ein Widerrufsrecht?
-            <span aria-hidden="true" style="color: var(--color-accent);">+</span>
-          </summary>
-          <p class="text-muted mt-md">Als VerbraucherIn steht Ihnen grundsätzlich ein 14-tägiges Widerrufsrecht zu. Bei digitalen Inhalten, die sofort bereitgestellt werden, erlischt dieses Recht mit Zustimmung zur sofortigen Ausführung. Details in unseren <a href="agb.html">AGB</a>.</p>
-        </details>
-
-        <details style="border-bottom: 1px solid var(--color-border); padding-bottom: var(--space-lg);">
-          <summary style="font-family: var(--font-heading); font-weight: 700; font-size: 1.05rem; cursor: pointer; color: var(--color-text); list-style: none; display: flex; justify-content: space-between; align-items: center;">
-            Gibt es Bildungsrabatte?
-            <span aria-hidden="true" style="color: var(--color-accent);">+</span>
-          </summary>
-          <p class="text-muted mt-md">Aktuell bieten wir keine gesonderten Bildungsrabatte an — TaktForge Free ist bereits vollständig kostenlos und für Studierendenbedürfnisse ausgelegt. Schreiben Sie uns für besondere Anfragen: <a href="mailto:contact@taktforge.app">contact@taktforge.app</a></p>
-        </details>
-      </div>
-
-      <!-- Checkout Section (hidden by default) -->
-      <section class="checkout-section" id="checkout-section" hidden aria-labelledby="checkout-heading">
-        <h2 id="checkout-heading" tabindex="-1">Bestellung abschließen</h2>
-        <p class="text-muted mt-sm mb-lg">Sie kaufen digitale Inhalte. Bitte lesen Sie den Hinweis unten sorgfältig durch.</p>
-
-        <div class="plan-summary" aria-live="polite">
-          <span class="plan-name" id="checkout-plan-label">TaktForge Pro — Monatlich</span>
-          <span class="plan-price" id="checkout-plan-price">€4,99 / Monat</span>
-        </div>
-
-        <form id="checkout-form" novalidate>
-          <div class="highlight-box" style="margin-bottom: var(--space-lg);">
-            <p style="font-size: 0.88rem; color: var(--color-text-muted); margin-bottom: var(--space-md);">
-              <strong style="color: var(--color-text);">Widerrufsbelehrung:</strong> Als VerbraucherIn haben Sie das Recht, binnen 14 Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Da es sich um die Lieferung digitaler Inhalte handelt, erlischt Ihr Widerrufsrecht, sobald TaktForge mit der Ausführung des Vertrags begonnen hat und Sie ausdrücklich zugestimmt haben, dass TaktForge vor Ablauf der Widerrufsfrist mit der Ausführung beginnt.
-            </p>
-          </div>
-
-          <div class="checkbox-group">
-            <input type="checkbox" id="widerruf-checkbox" name="widerruf" required>
-            <label class="checkbox-label" for="widerruf-checkbox">
-              Ich stimme zu, dass TaktForge mit der Ausführung des Vertrags sofort beginnt, und ich nehme zur Kenntnis, dass ich damit mein Widerrufsrecht verliere. Ich habe die <a href="agb.html">AGB</a> und die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und akzeptiere diese. <span style="color: var(--color-accent);">*</span>
-            </label>
-          </div>
-          <div class="form-error" id="widerruf-error" role="alert">Bitte bestätigen Sie die Zustimmung zur sofortigen Ausführung, um fortzufahren.</div>
-
-          <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: var(--space-lg);">
-            <button type="submit" class="btn btn-primary">Jetzt kaufen</button>
-            <button type="button" class="btn btn-secondary" onclick="document.getElementById('checkout-section').hidden=true;">Abbrechen</button>
-          </div>
-
-          <p class="text-xs text-muted mt-md">
-            * Pflichtfeld. Zahlung per Kreditkarte, PayPal oder SEPA-Lastschrift (Zahlungsabwicklung simuliert). Automatische Verlängerung bis zur Kündigung. Mindestlaufzeit: 1 Monat (monatlich) / 1 Jahr (jährlich).
+    <main id="main-content">
+      <div class="page-hero">
+        <div class="container">
+          <p class="section-label">Preise</p>
+          <h1>Einfach. Transparent. Fair.</h1>
+          <p>
+            Starte kostenlos und upgrade nur, wenn du die Pro-Funktionen
+            wirklich brauchst. Keine versteckten Kosten, kein Lock-in.
           </p>
-        </form>
+        </div>
+      </div>
+
+      <section aria-labelledby="pricing-heading">
+        <div class="container">
+          <h2 id="pricing-heading" class="sr-only">Preisübersicht</h2>
+
+          <div class="pricing-grid">
+            <!-- Free -->
+            <article class="pricing-card">
+              <div class="pricing-tier">Free</div>
+              <div class="pricing-price"><span class="currency">€</span>0</div>
+              <div class="pricing-alt">
+                Für immer kostenlos — kein Abo, keine Kreditkarte
+              </div>
+              <hr class="pricing-divider" />
+              <ul
+                class="pricing-features-list"
+                aria-label="Free-Plan Funktionen"
+              >
+                <li class="included">
+                  <span class="pf-check" aria-label="Enthalten">✓</span>
+                  Pomodoro-Timer (25/5 min Standard)
+                </li>
+                <li class="included">
+                  <span class="pf-check" aria-label="Enthalten">✓</span>
+                  Anpassbare Intervalle
+                </li>
+                <li class="included">
+                  <span class="pf-check" aria-label="Enthalten">✓</span>
+                  Session-Historie (7 Tage)
+                </li>
+                <li class="included">
+                  <span class="pf-check" aria-label="Enthalten">✓</span>
+                  Keyboard-Shortcuts
+                </li>
+                <li class="included">
+                  <span class="pf-check" aria-label="Enthalten">✓</span>
+                  iOS &amp; Android App
+                </li>
+                <li>
+                  <span class="pf-dash" aria-label="Nicht enthalten">—</span>
+                  Website-Blocker
+                </li>
+                <li>
+                  <span class="pf-dash" aria-label="Nicht enthalten">—</span>
+                  Unbegrenzte Historie
+                </li>
+                <li>
+                  <span class="pf-dash" aria-label="Nicht enthalten">—</span>
+                  CSV-Export
+                </li>
+                <li>
+                  <span class="pf-dash" aria-label="Nicht enthalten">—</span>
+                  Themes
+                </li>
+              </ul>
+              <a
+                href="kontakt.html"
+                class="btn btn-secondary"
+                style="width: 100%; justify-content: center"
+                >Kostenlos starten</a
+              >
+            </article>
+
+            <!-- Pro -->
+            <article class="pricing-card featured">
+              <div class="pricing-badge-top">Empfohlen</div>
+              <div class="pricing-tier">Pro</div>
+              <div class="pricing-price is-accent">
+                <span class="currency">€</span>4,99<span class="period"
+                  >/Monat</span
+                >
+              </div>
+              <div class="pricing-alt">
+                oder
+                <strong style="color: var(--color-text)">€39,00/Jahr</strong> —
+                spare 35%
+              </div>
+              <hr class="pricing-divider" />
+              <ul
+                class="pricing-features-list"
+                aria-label="Pro-Plan Funktionen"
+              >
+                <li class="included">
+                  <span class="pf-check" aria-label="Enthalten">✓</span>
+                  Alles aus Free
+                </li>
+                <li class="included">
+                  <span class="pf-check" aria-label="Enthalten">✓</span>
+                  <span><strong>Website- &amp; App-Blocker</strong></span>
+                </li>
+                <li class="included">
+                  <span class="pf-check" aria-label="Enthalten">✓</span>
+                  Unbegrenzte Session-Historie
+                </li>
+                <li class="included">
+                  <span class="pf-check" aria-label="Enthalten">✓</span>
+                  CSV-Export der Statistiken
+                </li>
+                <li class="included">
+                  <span class="pf-check" aria-label="Enthalten">✓</span>
+                  Themes &amp; Anpassungen
+                </li>
+                <li class="included">
+                  <span class="pf-check" aria-label="Enthalten">✓</span>
+                  Prioritäts-Support
+                </li>
+                <li class="included">
+                  <span class="pf-check" aria-label="Enthalten">✓</span>
+                  Alle zukünftigen Pro-Features
+                </li>
+              </ul>
+              <div style="display: flex; flex-direction: column; gap: 0.65rem">
+                <button
+                  class="btn btn-primary"
+                  style="width: 100%"
+                  data-checkout-trigger="monthly"
+                  aria-describedby="checkout-info"
+                >
+                  Monatlich wählen — €4,99/Monat
+                </button>
+                <button
+                  class="btn btn-ghost"
+                  style="width: 100%"
+                  data-checkout-trigger="yearly"
+                  aria-describedby="checkout-info"
+                >
+                  Jährlich wählen — €39,00/Jahr
+                </button>
+              </div>
+              <p
+                id="checkout-info"
+                class="text-muted text-xs mt-md"
+                style="text-align: center"
+              >
+                Jederzeit kündbar. Kein automatisches Upgrade ohne Zustimmung.
+              </p>
+            </article>
+          </div>
+
+          <!-- FAQ -->
+          <div style="max-width: 640px; margin-top: var(--space-3xl)">
+            <h2 style="font-size: 1.6rem; margin-bottom: var(--space-2xl)">
+              Häufige Fragen
+            </h2>
+
+            <details
+              style="
+                margin-bottom: var(--space-lg);
+                border-bottom: 1px solid var(--color-border);
+                padding-bottom: var(--space-lg);
+              "
+            >
+              <summary
+                style="
+                  font-family: var(--font-heading);
+                  font-weight: 700;
+                  font-size: 1.05rem;
+                  cursor: pointer;
+                  color: var(--color-text);
+                  list-style: none;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                Kann ich jederzeit kündigen?
+                <span aria-hidden="true" style="color: var(--color-accent)"
+                  >+</span
+                >
+              </summary>
+              <p class="text-muted mt-md">
+                Ja. Pro-Abonnements können jederzeit über die App oder per
+                E-Mail gekündigt werden. Das Abo läuft bis zum Ende der
+                bezahlten Periode weiter.
+              </p>
+            </details>
+
+            <details
+              style="
+                margin-bottom: var(--space-lg);
+                border-bottom: 1px solid var(--color-border);
+                padding-bottom: var(--space-lg);
+              "
+            >
+              <summary
+                style="
+                  font-family: var(--font-heading);
+                  font-weight: 700;
+                  font-size: 1.05rem;
+                  cursor: pointer;
+                  color: var(--color-text);
+                  list-style: none;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                Was passiert mit meinen Daten nach der Kündigung?
+                <span aria-hidden="true" style="color: var(--color-accent)"
+                  >+</span
+                >
+              </summary>
+              <p class="text-muted mt-md">
+                Deine Session-Historie der letzten 7 Tage bleibt erhalten.
+                Ältere Einträge sind nach dem Downgrade nicht mehr zugänglich,
+                bleiben aber 30 Tage gespeichert für den Fall eines Upgrades.
+              </p>
+            </details>
+
+            <details
+              style="
+                margin-bottom: var(--space-lg);
+                border-bottom: 1px solid var(--color-border);
+                padding-bottom: var(--space-lg);
+              "
+            >
+              <summary
+                style="
+                  font-family: var(--font-heading);
+                  font-weight: 700;
+                  font-size: 1.05rem;
+                  cursor: pointer;
+                  color: var(--color-text);
+                  list-style: none;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                Gibt es ein Widerrufsrecht?
+                <span aria-hidden="true" style="color: var(--color-accent)"
+                  >+</span
+                >
+              </summary>
+              <p class="text-muted mt-md">
+                Als VerbraucherIn steht Ihnen grundsätzlich ein 14-tägiges
+                Widerrufsrecht zu. Bei digitalen Inhalten, die sofort
+                bereitgestellt werden, erlischt dieses Recht mit Zustimmung zur
+                sofortigen Ausführung. Details in unseren
+                <a href="agb.html">AGB</a>.
+              </p>
+            </details>
+
+            <details
+              style="
+                border-bottom: 1px solid var(--color-border);
+                padding-bottom: var(--space-lg);
+              "
+            >
+              <summary
+                style="
+                  font-family: var(--font-heading);
+                  font-weight: 700;
+                  font-size: 1.05rem;
+                  cursor: pointer;
+                  color: var(--color-text);
+                  list-style: none;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                Gibt es Bildungsrabatte?
+                <span aria-hidden="true" style="color: var(--color-accent)"
+                  >+</span
+                >
+              </summary>
+              <p class="text-muted mt-md">
+                Aktuell bieten wir keine gesonderten Bildungsrabatte an —
+                TaktForge Free ist bereits vollständig kostenlos und für
+                Studierendenbedürfnisse ausgelegt. Schreiben Sie uns für
+                besondere Anfragen:
+                <a href="mailto:contact@taktforge.app">contact@taktforge.app</a>
+              </p>
+            </details>
+          </div>
+
+          <!-- Checkout Section (hidden by default) -->
+          <section
+            class="checkout-section"
+            id="checkout-section"
+            hidden
+            aria-labelledby="checkout-heading"
+          >
+            <h2 id="checkout-heading" tabindex="-1">Bestellung abschließen</h2>
+            <p class="text-muted mt-sm mb-lg">
+              Sie kaufen digitale Inhalte. Bitte lesen Sie den Hinweis unten
+              sorgfältig durch.
+            </p>
+
+            <div class="plan-summary" aria-live="polite">
+              <span class="plan-name" id="checkout-plan-label"
+                >TaktForge Pro — Monatlich</span
+              >
+              <span class="plan-price" id="checkout-plan-price"
+                >€4,99 / Monat</span
+              >
+            </div>
+
+            <form id="checkout-form" novalidate>
+              <div class="highlight-box" style="margin-bottom: var(--space-lg)">
+                <p
+                  style="
+                    font-size: 0.88rem;
+                    color: var(--color-text-muted);
+                    margin-bottom: var(--space-md);
+                  "
+                >
+                  <strong style="color: var(--color-text)"
+                    >Widerrufsbelehrung:</strong
+                  >
+                  Als VerbraucherIn haben Sie das Recht, binnen 14 Tagen ohne
+                  Angabe von Gründen diesen Vertrag zu widerrufen. Da es sich um
+                  die Lieferung digitaler Inhalte handelt, erlischt Ihr
+                  Widerrufsrecht, sobald TaktForge mit der Ausführung des
+                  Vertrags begonnen hat und Sie ausdrücklich zugestimmt haben,
+                  dass TaktForge vor Ablauf der Widerrufsfrist mit der
+                  Ausführung beginnt.
+                </p>
+              </div>
+
+              <div class="checkbox-group">
+                <input
+                  type="checkbox"
+                  id="widerruf-checkbox"
+                  name="widerruf"
+                  required
+                />
+                <label class="checkbox-label" for="widerruf-checkbox">
+                  Ich stimme zu, dass TaktForge mit der Ausführung des Vertrags
+                  sofort beginnt, und ich nehme zur Kenntnis, dass ich damit
+                  mein Widerrufsrecht verliere. Ich habe die
+                  <a href="agb.html">AGB</a> und die
+                  <a href="datenschutz.html">Datenschutzerklärung</a> gelesen
+                  und akzeptiere diese.
+                  <span style="color: var(--color-accent)">*</span>
+                </label>
+              </div>
+              <div class="form-error" id="widerruf-error" role="alert">
+                Bitte bestätigen Sie die Zustimmung zur sofortigen Ausführung,
+                um fortzufahren.
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  gap: 1rem;
+                  flex-wrap: wrap;
+                  margin-top: var(--space-lg);
+                "
+              >
+                <button type="submit" class="btn btn-primary">
+                  Jetzt kaufen
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  onclick="
+                    document.getElementById('checkout-section').hidden = true
+                  "
+                >
+                  Abbrechen
+                </button>
+              </div>
+
+              <p class="text-xs text-muted mt-md">
+                * Pflichtfeld. Zahlung per Kreditkarte, PayPal oder
+                SEPA-Lastschrift (Zahlungsabwicklung simuliert). Automatische
+                Verlängerung bis zur Kündigung. Mindestlaufzeit: 1 Monat
+                (monatlich) / 1 Jahr (jährlich).
+              </p>
+            </form>
+          </section>
+        </div>
       </section>
+    </main>
 
-    </div>
-  </section>
-</main>
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a
+              href="index.html"
+              class="logo"
+              aria-label="TaktForge – Zur Startseite"
+            >
+              <img
+                src="assets/wortbildmarke.svg"
+                class="logo-wortbild"
+                alt="TaktForge"
+              />
+            </a>
+            <p>Fokus-Timer für Studierende und Entwickler. Made in Vienna.</p>
+          </div>
+          <div class="footer-col">
+            <h3>Produkt</h3>
+            <ul>
+              <li><a href="index.html#features">Funktionen</a></li>
+              <li><a href="preise.html">Preise</a></li>
+              <li><a href="about.html">Über uns</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Rechtliches</h3>
+            <ul>
+              <li><a href="impressum.html">Impressum</a></li>
+              <li><a href="datenschutz.html">Datenschutz</a></li>
+              <li><a href="agb.html">AGB</a></li>
+              <li><a href="lizenz.html">Lizenz</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2024 TaktForge GmbH, Wien. Alle Rechte vorbehalten.</span>
+          <span lang="en">Made with focus in Vienna, Austria.</span>
+        </div>
+      </div>
+    </footer>
 
-<footer class="site-footer" role="contentinfo">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="logo" aria-label="TaktForge – Zur Startseite">
-          <img src="assets/wortbildmarke.svg" class="logo-wortbild" alt="TaktForge">
-        </a>
-        <p>Fokus-Timer für Studierende und Entwickler. Made in Vienna.</p>
-      </div>
-      <div class="footer-col">
-        <h3>Produkt</h3>
-        <ul>
-          <li><a href="index.html#features">Funktionen</a></li>
-          <li><a href="preise.html">Preise</a></li>
-          <li><a href="about.html">Über uns</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h3>Rechtliches</h3>
-        <ul>
-          <li><a href="impressum.html">Impressum</a></li>
-          <li><a href="datenschutz.html">Datenschutz</a></li>
-          <li><a href="agb.html">AGB</a></li>
-          <li><a href="lizenz.html">Lizenz</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2024 TaktForge GmbH, Wien. Alle Rechte vorbehalten.</span>
-      <span lang="en">Made with focus in Vienna, Austria.</span>
-    </div>
-  </div>
-</footer>
-
-<script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>
